@@ -17,5 +17,6 @@ public class MvcMemberFormServlet extends HttpServlet {
         String viewPath = "/WEB-INF/views/new-form.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);// servlet을 통한 controller 에서 view 역할을 하는 jsp로 이동
         dispatcher.forward(request, response);
+        // WEB-INF 에 있는 jsp 파일은 forward 하지 않는 이상 직접적인 호출은 불허함
     }
 }

@@ -34,7 +34,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println("--- REQUEST-LINE - end ---");
         System.out.println();
     }
-
+    // Header 모든 정보
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
 
